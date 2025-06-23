@@ -12,6 +12,7 @@ This repository contains all the submission material regarding task 1 for the in
 - It lists the ip ranges with IPv4 and IPv6 address types.
 3. I then ran help command to see options available for nmap : `nmap -h`.
 4. Then I saw some useful options, as the internet may contain any firewall or other rules, I used option `-sS` to stealth scan the network, `-Pn` to skip the host discovery, `-p-` to scan all the ports in the network, and `-oN` to save the result into a normal text file.
+![Screenshot 2025-06-23 183355](https://github.com/user-attachments/assets/7f3a0c53-c128-48b2-90af-deed072eef7c)
 5. Hence I can now see which ports were open.
 6. Now utilizing the information available, I noted the security risk that can be found from these ports. It can be found in Risk folder of the repository.
 
