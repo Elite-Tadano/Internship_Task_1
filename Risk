@@ -1,0 +1,13 @@
+# Risk Analysis
+
+1. Port 65443/tcp – Open (Unknown Service)
+- This port is open, but Nmap couldn’t identify the service running on it. This usually means a custom or non-standard service is listening.
+
+Risks:
+- Unknown services are red flags during security assessments. They may be misconfigured or contain vulnerabilities. If the service lacks authentication or has weak access control, it could be exploited. Attackers may fingerprint the service using tools like nmap -sV, netcat, or telnet to discover more.
+
+2. Port 9443/tcp – Filtered (Tungsten-HTTPS)
+- This port is filtered, meaning a firewall or security device is blocking the scan. Port 9443 is typically used for secure web applications over HTTPS, often for admin panels or dashboards.
+
+Risks:
+- If exposed and running a web-based dashboard or API (e.g., VMware, Tungsten Fabric), it could be a target for brute-force or exploit attacks. Filtered ports might still be accessible from internal IPs or attackers within the network. Legacy versions of services on this port may have known CVEs.
