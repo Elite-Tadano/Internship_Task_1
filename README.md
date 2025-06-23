@@ -15,5 +15,7 @@ This repository contains all the submission material regarding task 1 for the in
 5. Hence I can now see which ports were open.
 6. Now utilizing the information available, I noted the security risk that can be found from these ports. It can be found in Risk folder of the repository.
 
+### Outcome: Basic network reconnaissance skills; understanding network service exposure.
+
 ## Conclusion:
 - This task helped me understand how to use Nmap to perform a basic port scan on my local network. I identified active hosts, discovered open ports, and learned how to analyze the services running on them. This process is crucial in network security to assess potential vulnerabilities and reduce attack surfaces.
